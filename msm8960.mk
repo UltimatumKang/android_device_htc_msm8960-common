@@ -113,6 +113,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     lpa.decode=false \
     tunnel.decode=true \
     tunnel.audiovideo.decode=true \
+	persist.audio.lowlatency.rec=false \
     persist.audio.fluence.mode=endfire \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
