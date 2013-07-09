@@ -34,8 +34,8 @@
 #define BOOSTPULSE_INTERACTIVE "/sys/devices/system/cpu/cpufreq/interactive/boostpulse"
 #define BOOSTPULSE_INTELLIDEMAND "/sys/devices/system/cpu/cpufreq/intellidemand/boostpulse"
 #define SAMPLING_RATE_INTELLIDEMAND "/sys/devices/system/cpu/cpufreq/intellidemand/sampling_rate"
-#define SAMPLING_RATE_SCREEN_ON "50000"
-#define SAMPLING_RATE_SCREEN_OFF "500000"
+#define SAMPLING_RATE_SCREEN_ON "80000"
+#define SAMPLING_RATE_SCREEN_OFF "800000"
 
 #define MAX_BUF_SZ  80
 
