@@ -32,6 +32,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.compass.xml \
+    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # Audio
@@ -97,7 +99,6 @@ PRODUCT_COPY_FILES += \
 
 # Media config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml
 
@@ -110,6 +111,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
     lpa.decode=true \
+    tunnel.decode=true \
+    tunnel.audiovideo.decode=true \
+    persist.audio.lowlatency.rec=false \
     persist.audio.fluence.mode=endfire \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
@@ -118,6 +122,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.thermal.monitor=true \
     ro.opengles.version=131072 \
     ro.qc.sdk.audio.fluencetype=fluence \
-    ro.telephony.ril_class=HTCQualcommRIL \
     ro.use_data_netmgrd=true \
     wifi.interface=wlan0
