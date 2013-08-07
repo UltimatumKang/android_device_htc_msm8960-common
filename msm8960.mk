@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    alsa.msm8960 \
     audio.a2dp.default \
     audio_policy.msm8960 \
     audio.primary.msm8960 \
@@ -115,7 +114,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.speaker.location=high \
     persist.hwc.mdpcomp.enable=true \
     persist.thermal.monitor=true \
-    ro.opengles.version=131072 \
     ro.qc.sdk.audio.fluencetype=fluence \
     ro.use_data_netmgrd=true \
     wifi.interface=wlan0
